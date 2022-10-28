@@ -1,0 +1,42 @@
+= What Is Spring Sample Application
+
+This is a Spring Cloud MVC application that will allow the user to play a fishing game.  Each time the user runs http get from  http://localhost:8080/cast the result will tell them if they caught a fish or not.
+This is the demo application for the What is Spring Talk at S1-2022.
+
+== Requirements:
+
+* Java 17 or Above
+
+== Classes:
+
+* Whatisspring - the Spring Boot Main Application
+* FishCastController - the mvc controller that returns the result to the user as to if they caught a fish or not.
+
+== Build:
+
+[source,shell]
+----
+mvn clean package
+----
+
+== Run:
+
+[source,shell]
+----
+java -jar target/whatisspring-0.0.1-SNAPSHOT.jar
+
+----
+
+== Native Build:
+
+[source,shell]
+----
+mvn -Pnative native:compile
+----
+
+== Native Run:
+
+[source,shell]
+----
+./target/whatisspring
+----
